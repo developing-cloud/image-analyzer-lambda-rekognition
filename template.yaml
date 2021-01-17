@@ -8,10 +8,10 @@ Resources:
       FunctionName: image-analyzer-lambda-rekognition
       AutoPublishAlias: prod
       Handler: cloud.developing.imageanalyzer.rekognition.Rekognition::recognize
-      Runtime: java11
+      Runtime: java8
       CodeUri: ./build/distributions/image-analyzer-lambda-rekognition.zip
       MemorySize: 512
       Timeout: 30
       Role: !Sub arn:aws:iam::${AWS::AccountId}:role/lambda_exec_role
       Layers: 
-        - !Sub arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:layer:image-analyzer-lambda-layer:5
+        - !Sub arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:layer:image-analyzer-lambda-layer:8

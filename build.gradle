@@ -5,7 +5,7 @@ repositories {
     mavenCentral()
 }
 
-def aws_sdk_version = '1.11.465'
+def aws_sdk_version = '1.11.500'
 
 dependencies {
 
@@ -20,5 +20,5 @@ task buildZip(type: Zip) {
     from compileJava
 }
 
-sourceCompatibility = '11'
-targetCompatibility = '11'
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
